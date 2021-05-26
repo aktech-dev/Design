@@ -75,6 +75,7 @@ public class Register extends AppCompatActivity {
                 // find the radiobutton by returned id
                 if(selectedId == 0){
                     Snackbar.make(constraintLayout_SignUp, "Please Select User or Provider from above", Snackbar.LENGTH_SHORT).show();
+                    return;
                 }
                 RadioButton radioButton = (RadioButton) findViewById(selectedId);
                 str_radio_value = radioButton.getText().toString().trim();
